@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 14px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  background-attachment: fixed;
+  height: 100vh;
+  color: #1d1e35;
+}
+
+div.cheatOverflow img.four {
+  display: none;
+}
+
+div.wrapper {
+  background-color: #fff;
+  position: relative;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  border-radius: 25px;
+  width: 88%;
+  max-width: 400px;
+  height: 550px;
+  -webkit-box-shadow: 0px 40px 40px -10px #5d40b3;
+          box-shadow: 0px 40px 40px -10px #5d40b3;
+}
+
+div.wrapper div.img {
+  text-align: center;
+}
+
+div.wrapper div.img img:nth-of-type(2) {
+  -webkit-transform: translate(-5%, -110%);
+          transform: translate(-5%, -110%);
+}
+
+div.wrapper div.img img.three, div.wrapper div.img img.four, div.wrapper div.img img.five {
+  display: none;
+}
+
+div.wrapper div.faq {
+  position: absolute;
+  top: 104px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 85%;
+}
+
+div.wrapper div.faq h1 {
+  text-align: center;
+  font-size: 33px;
+  padding: 25px 0 15px;
+}
+
+div.wrapper div.faq div.que {
+  position: relative;
+  color: #787887;
+  border-bottom: 1px solid #e7e7e9;
+  padding: 17px 0;
+}
+
+div.wrapper div.faq div.que img {
+  position: absolute;
+  right: 0px;
+  top: 22px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.wrapper div.faq div.que p:nth-of-type(2) {
+  font-size: 12px;
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+div.wrapper div.faq div.que p:nth-of-type(2).show {
+  padding-top: 15px;
+  opacity: 100%;
+  height: 45px;
+  color: #787887;
+  font-weight: 400;
+}
+
+div.wrapper div.faq div.que:nth-of-type(1) p:nth-of-type(2).show, div.wrapper div.faq div.que:nth-of-type(3) p:nth-of-type(2).show {
+  margin-bottom: 15px;
+}
+
+div.wrapper div.faq .active {
+  color: #1d1e35 !important;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+    height: 937px;
+  }
+  div.wrapper, div.cheatOverflow {
+    max-width: 1100px;
+    top: 165px;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+            transform: translatex(-50%);
+    height: 610px;
+  }
+  div.cheatOverflow {
+    position: absolute;
+    width: 550px;
+    -webkit-transform: translatex(-100%);
+            transform: translatex(-100%);
+  }
+  div.cheatOverflow img.four {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 240px;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  div.wrapper {
+    overflow: hidden;
+  }
+  div.wrapper div.img img.one, div.wrapper div.img img.two {
+    display: none;
+  }
+  div.wrapper div.img img.three, div.wrapper div.img img.five {
+    display: block;
+    position: absolute;
+  }
+  div.wrapper div.img img.three {
+    top: -53%;
+    left: -56%;
+    width: 100%;
+  }
+  div.wrapper div.img img.five {
+    top: 50%;
+    left: -7%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 70%;
+  }
+  div.wrapper div.faq {
+    top: 80px;
+    left: calc(100% - 100px);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    width: calc(45% - 100px);
+  }
+  div.wrapper div.faq h1 {
+    text-align: left;
+    font-size: 40px;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+  div.wrapper div.faq div.que {
+    padding: 20px 0;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  div.wrapper div.faq div.que:hover {
+    color: #f47c57;
+    cursor: pointer;
+    -webkit-animation: boxMove;
+            animation: boxMove;
+  }
+  div.wrapper div.faq div.que:hover ~ div.wrapper {
+    width: 100px;
+  }
+  div.wrapper div.faq div.que img {
+    top: 29px;
+  }
+  div.wrapper div.faq div.que p:nth-of-type(2) {
+    font-size: 15px;
+  }
+  div.wrapper div.faq div.que p:nth-of-type(2).show {
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
